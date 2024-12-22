@@ -8,7 +8,7 @@ Here are the names of the students in the group assignment, who contributed:
 2. ALVIN NDUATI- 166244
 3. JOE NJIOKA-150170
 4. NYAKIO NDAMBIRI- 152136
-5. FINNRAYAT OCHIENG-
+5. FINNRAYAT OCHIENG-165915
 6. 
 
 ---
@@ -22,16 +22,14 @@ Here are the names of the students in the group assignment, who contributed:
    1. Menus
    2. Orders
    3. Reservations
-   4. Staff
-   5. Payment
-6. [Testing with Postman](#testing-with-postman)
-7. [Contributing](#contributing)
+   4. Payment
+5. [Contributing](#contributing)
 
 ---
 
 ## Overview
 
-The **Restaurant Management System** is built using Django and Django REST Framework (DRF). It enables managing of restaurant, the orders that come in, the reservations and payments, as well as the staff. The API features user authentication and role-based access for secure interaction.
+The **Restaurant Management System** is built using Django and Django REST Framework (DRF). It enables managing of restaurant, the orders that come. 
 
 ---
 
@@ -49,7 +47,7 @@ Ensure the following are installed on your system:
 
 ```bash
 $ git clone https://github.com/NYAKIOMURIUKI-TECH/restaurantmanagementsys.git
-$ cd enrollment-system
+$ cd restaurant_system
 ```
 
 ---
@@ -75,13 +73,8 @@ $ pip install -r requirements.txt
 $ python manage.py migrate
 ```
 
-### 4. Create a Superuser
 
-```bash
-$ python manage.py createsuperuser
-```
-
-### 5. Run the Server
+### 4. Run the Server
 
 ```bash
 $ python manage.py runserver
@@ -93,119 +86,24 @@ The application will be available at `http://127.0.0.1:8000/`.
 
 ## API Endpoints
 
-### Authentication(Currently Disabled)
+### Orders
+- **Create order**
+  - `POST /api/orders/`
 
-- You can go to Admin on this URL `POST /admin/`
- 
+- **List Orders**
+  - `GET /api/orders/{id}/`
+  - `GET /api/orders/{id}/`-order status [from placed to in preparation]
 
-### Schools
-- **List/Create Schools**
-  - `GET /api/schools/`
-  - `POST /api/schools/`
+### Menus
+- **List Menus**
+  - `GET /api/menu/`
+    
 
-- **Retrieve/Update a School**
-  - `GET /api/schools/{id}/`
-  - `PUT /api/schools/{id}/`
-
-### Students
-- **List/Create Students**
-  - `GET /api/students/`
-  - `POST /api/students/`
-
-- **Retrieve/Update a Student**
-  - `GET /api/students/{id}/`
-  - `PUT /api/students/{id}/`
-
-### Courses
-- **List/Create Courses**
-  - `GET /api/courses/`
-  - `POST /api/courses/`
-
-- **Retrieve/Update a Course**
-  - `GET /api/courses/{id}/`
-  - `PUT /api/courses/{id}/`
-
-### Academic Years
-- **List/Create Academic Years**
-  - `GET /api/academicyears/`
-  - `POST /api/academicyears/`
-
-- **Retrieve/Update an Academic Year**
-  - `GET /api/academicyears/{id}/`
-  - `PUT /api/academicyears/{id}/`
-
-### Semesters
-- **List/Create Semesters**
-  - `GET /api/semesters/`
-  - `POST /api/semesters/`
-
-- **Retrieve/Update a Semester**
-  - `GET /api/semesters/{id}/`
-  - `PUT /api/semesters/{id}/`
-
-### Enrollments
-- **List/Create Enrollments**
-  - `GET /api/enrollments/`
-  - `POST /api/enrollments/`
-
-- **Retrieve/Update an Enrollment**
-  - `GET /api/enrollments/{id}/`
-  - `PUT /api/enrollments/{id}/`
-
----
-
-## Testing with Postman(Included With Screenshots)
-*(We used Postman Visual Studio Code Extension, as the desktop agent is buggy and heavy!)
-
-![Postman As VS Code Extension](images/Screenshot%202024-12-20%20172322.png)
-Figure 1: Postman As a VS Code Extension
+- **/Update the menu**
+  - `GET /api/menu/{id}/`
+  - `PUT /api/menu/{id}/`
 
 
-![Postman In Action #2](images/Screenshot%202024-12-20%20172859.png)
-Figure 2: Postman In Action Part 1
-
-### Step 3: Test Endpoints
-
-![Postman In Action #3](images/Screenshot%202024-12-20%20172939.png)
-Figure 3: Postman In Action Part 2
-
-
-![GET Student By ID](images/Screenshot%202024-12-20%20174326.png)
-Figure 4: Get A Student By his/her ID
-
-
-![GET All Students](images/Screenshot%202024-12-20%20174348.png)
-Figure 5: Get All Students
-
-#### Example: Create a School
-1. Select the `POST /api/schools/` endpoint.
-2. In the body, input:
-   ```json
-   {
-     "school_name": "Strathmore University"
-   }
-   ```
-
-3. Send the request.
-4. Successful Response:
-   ```json
-   {
-     "id": 1,
-     "school_name": "Strathmore University",
-     "created_at": "2024-12-19T12:00:00Z",
-     "created_by": 1
-   }
-   ```
-![UPDATE A Student's Details](images/Screenshot%202024-12-20%20184510.png)
-Figure 6: Update A Student's Details using a PUT Request
-
-
-![DELETE A Student's Details](images/Screenshot%202024-12-20%20183806.png)
-Figure 7: Delete A Student By his/her ID
-
-
-![GET All Student's Details After DELETE operation](images/Screenshot%202024-12-20%20184543.png)
-Figure 8: Get All Student's Details After running the DELETE HTTP Action Method
 
 ## Contributing
 
@@ -216,4 +114,3 @@ We welcome contributions to enhance the functionality of the API. Please follow 
 
 ---
 
-Thank you for using the **Student Enrollment System API**! If you encounter any issues, please open an issue in the repository.
