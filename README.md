@@ -9,7 +9,7 @@ Here are the names of the students in the group assignment, who contributed:
 3. JOE NJIOKA-150170
 4. NYAKIO NDAMBIRI- 152136
 5. FINNRAYAT OCHIENG-165915
-6. NTUMWA
+6. NTUMWA SERAPHIN- 153383
  
 
 ---
