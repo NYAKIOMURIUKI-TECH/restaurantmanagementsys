@@ -5,10 +5,11 @@ This guide provides comprehensive information about the API, its endpoints, and 
 
 Here are the names of the students in the group assignment, who contributed:
 1. WAYNE LUMADEDE- 151295
-2. ALVIN
+2. ALVIN NDUATI- 166244
 3. JOE NJIOKA-150170
 4. NYAKIO NDAMBIRI- 152136
-5. FINNRAYAT OCHIENG
+5. FINNRAYAT OCHIENG-
+6. 
 
 ---
 
@@ -18,20 +19,19 @@ Here are the names of the students in the group assignment, who contributed:
 2. [Installation](#installation)
 3. [Environment Setup](#environment-setup)
 4. [API Endpoints](#api-endpoints)
-    - [Schools](#schools)
-    - [Students](#students)
-    - [Courses](#courses)
-    - [Academic Years](#academic-years)
-    - [Semesters](#semesters)
-    - [Enrollments](#enrollments)
-5. [Testing with Postman](#testing-with-postman)
-6. [Contributing](#contributing)
+   1. Menus
+   2. Orders
+   3. Reservations
+   4. Staff
+   5. Payment
+6. [Testing with Postman](#testing-with-postman)
+7. [Contributing](#contributing)
 
 ---
 
 ## Overview
 
-The **Restaurant Management System** is built using Django and Django REST Framework (DRF). It enables managing of restaurants . The API features user authentication and role-based access for secure interaction.
+The **Restaurant Management System** is built using Django and Django REST Framework (DRF). It enables managing of restaurant, the orders that come in, the reservations and payments, as well as the staff. The API features user authentication and role-based access for secure interaction.
 
 ---
 
@@ -48,7 +48,7 @@ Ensure the following are installed on your system:
 ### Clone the Repository
 
 ```bash
-$ git clone https://github.com/your-repository/enrollment-system.git
+$ git clone https://github.com/your-repo/enrollment-system.git
 $ cd enrollment-system
 ```
 
