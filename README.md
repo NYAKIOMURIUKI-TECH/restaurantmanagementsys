@@ -48,7 +48,7 @@ Ensure the following are installed on your system:
 ### Clone the Repository
 
 ```bash
-$ git clone https://github.com/your-repo/enrollment-system.git
+$ git clone https://github.com/NYAKIOMURIUKI-TECH/restaurantmanagementsys.git
 $ cd enrollment-system
 ```
 
